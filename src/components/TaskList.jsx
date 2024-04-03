@@ -26,7 +26,7 @@ const TodoListItem = ({ todo, onDelete, onComplete, onEdit }) => {
       // If in editing mode and new title is not empty
       onEdit(todo.id, newTitle); // Call onEdit function with todo id and new title
     }
-    setIsEditing(!isEditing); // Toggle editing mode
+  setIsEditing(!isEditing); // Toggle editing mode
   };
   // Rendering TodoListItem component
   return (
