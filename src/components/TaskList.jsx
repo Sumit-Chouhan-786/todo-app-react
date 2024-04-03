@@ -26,11 +26,11 @@ const TodoListItem = ({ todo, onDelete, onComplete, onEdit }) => {
       // If in editing mode and new title is not empty
       onEdit(todo.id, newTitle); // Call onEdit function with todo id and new title
     }
-  setIsEditing(!isEditing); // Toggle editing mode
+    setIsEditing(!isEditing); // Toggle editing mode
   };
   // Rendering TodoListItem component
   return (
-    <div className="flex justify-between items-center transition-all px-4  py-[10px] border_remove">
+    <div className="flex justify-between items-center rounded-lg mt-3 border border-gray-300 transition-all px-4  py-[10px] border_remove">
       {isEditing ? ( // If in editing mode
         <input
           type="text"

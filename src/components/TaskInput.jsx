@@ -79,7 +79,7 @@ const TodoList = () => {
             }}
             className="outline-none w-full pr-2 text-gray-600" // Input field styling
             type="text"
-            placeholder="Learn html css" // Placeholder text for input field
+            placeholder="Enter Todo Here" // Placeholder text for input field
           />
           <button
             onClick={setData} // Event handler to add todo
@@ -89,7 +89,7 @@ const TodoList = () => {
           </button>
         </div>
         {/* Container for displaying todos */}
-        <div className="border border-gray-300 rounded-lg overflow-hidden">
+        <div className="overflow-hidden">
           {/* Mapping over todos array and rendering TodoListItem component for each todo */}
           {todos.map((todo) => (
             <TodoListItem
